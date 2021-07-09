@@ -8,26 +8,22 @@ const body = document.querySelector('#bodyTag');
 const gridSquare = document.querySelector('#gridSquare');
 const gridBox = document.querySelector('#gridBox');
 
-
 const gridContainer = document.createElement('div');
       gridContainer.id='gridContainer';
       gridContainer.classList.add('grid');
       gridBox.appendChild(gridContainer);
       
-
 let gridColor = 'rgb(0,0,0)';
 let btn = 'black';
 let noPaint = false;
 
 
 for (let i=0;i<256;i++) {
-
 const gridElements = document.createElement('div');
       gridElements.classList.add('gridElements');
       gridElements.id='gridElements';
       gridElements.style.backgroundColor = 'rgb(255,255,255)';
-      gridContainer.appendChild(gridElements);
-      
+      gridContainer.appendChild(gridElements);    
 }
 
 
@@ -80,8 +76,7 @@ body.addEventListener('mousedown', function (e) {
 })
 
 body.addEventListener('mouseup', function (e) {
-    
-    noPaint = false;
+     noPaint = false;
 })
 
 gridContainer.addEventListener('mouseover', function (e) {
@@ -128,6 +123,7 @@ function randomColor() {
     gridColor = 'rgb(' + var1 + ', ' + var2 + ', ' + var3 + ')'
 }
 
+
 function shaderF(){
     gridColor.toString();
     let rgb = gridColor.substring(4, gridColor.length-1)
@@ -139,10 +135,8 @@ function shaderF(){
          temp =temp-25.5;
          rgb[i] = temp;
 }
-
         rgb = rgb.join(', ');
-        gridColor = 'rgb(' + rgb + ')';
-        
+        gridColor = 'rgb(' + rgb + ')';   
 }
 
 

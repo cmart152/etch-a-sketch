@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Etch a Sketch</title>
+    <link  rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+</head>
+
+<body id='bodyTag' ondragstart="return false;" ondrop="return false;">
+
+    <h1>Etch a Sketch</h1>
+
+<div>
+    <button id='RGB' class='buttons'>RGB</button>
+    <button id='black' class='buttons'>Black</button>
+    <button id='shader' class='buttons'>Shader</button>
+    <button id='eraser' class='buttons'>Eraser</button>
+    <button id='reset' class='buttons'>Reset</button>
+</div>
+
+<div id='gridSquare' class='gridSquare2'>
+    <div class='colorCreator'>
+        <p>Colour creation station</p>
+        <input input type='color' id='pickColor' class='buttons'></input>
+    </div >
+    <div id='gridBox' class='gridBox2'>
+    </div>
+    <div class='instructions'>Click mouse to lift sketcher</div>
+    
+</div>
+
+
+</body>
+<script src='script.js'></script>

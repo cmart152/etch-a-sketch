@@ -1,0 +1,84 @@
+:root {
+    --grid-template-columns: repeat(16, 1fr);
+    
+  }
+
+  body {
+      background-color: rgb(191, 255, 255);
+    
+  }
+
+  h1 {
+      color:rgb(255, 128, 128);
+      text-align: center;
+      font-size: 100px;
+      font-family: 'Yomogi', cursive;
+      margin-top: 0px;
+      margin-bottom: 30px;;
+  }
+
+.buttons {
+    width:200px;
+    height:70px;
+    font-size: 40px;
+    font-family: 'Yomogi', cursive;
+    background-color: antiquewhite;
+    border: 1px solid rgb(167, 167, 167);
+    margin: 20px;   
+}
+
+.buttonPress {
+    border-color: rgb(255, 179, 179);
+    transition: all 0.2s;
+    box-shadow: 0px 0px 50px rgb(255, 179, 179);
+    transform: scale(1.1);
+}
+
+#reset {
+    float:right;
+}
+
+.gridSquare2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.colorCreator {
+    font-family: 'Yomogi', cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    height: 280px;
+    width: 275px;
+    background-color: rgb(88, 188, 255);
+    text-align: center;
+    margin-top: 150px;
+} 
+
+p {
+    margin: 0;
+}
+
+.gridBox2 {
+    margin-left: 10%;
+}
+
+.grid {
+    height:850px;
+    min-width: 850px;
+    display:grid;
+    grid-template-columns: var(--grid-template-columns);
+    gap:0;
+}
+
+.gridElements {
+    border: solid 0.1px rgb(236, 236, 236);
+}
+
+.instructions {
+font-family: 'Yomogi', cursive;
+font-size: 50px;
+margin-top: 150px;
+margin-left: 30px;
+}

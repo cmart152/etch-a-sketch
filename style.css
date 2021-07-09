@@ -57,7 +57,9 @@
     margin-bottom: 30px;
     border: 1px solid black;
     height: 280px;
+    min-height: 280px;
     width: 275px;
+    min-width: 275px;
     background-color: rgb(88, 188, 255);
     text-align: center;
     margin-top: 150px;

@@ -49,6 +49,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
+    
 }
 
 .colorCreator {
@@ -79,6 +80,7 @@ p {
     display:grid;
     grid-template-columns: var(--grid-template-columns);
     gap:0;
+    touch-action: none;
 }
 
 .gridElements {
